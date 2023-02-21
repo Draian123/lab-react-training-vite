@@ -21,12 +21,12 @@ function App() {
       <Greetings lang="de">Ludwig</Greetings>
       <Random min={1} max={6}/>
       <BoxColor r={255} g={0} b={0} />
-      <Rating checkValue={checkValue}>0</Rating>
-      <Rating checkValue={checkValue}>1.49</Rating>
-      <Rating checkValue={checkValue}>1.5</Rating>
-      <Rating checkValue={checkValue}>3</Rating>
-      <Rating checkValue={checkValue}>4</Rating>
-      <Rating checkValue={checkValue}>5</Rating>
+      <Rating>0</Rating>
+      <Rating>1.49</Rating>
+      <Rating>1.5</Rating>
+      <Rating>3</Rating>
+      <Rating>4</Rating>
+      <Rating>5</Rating>
       <DriverCard
         name="Travis Kalanick"
         rating={4.2}
@@ -34,6 +34,15 @@ function App() {
         car={{
           model: "Toyota Corolla Altis",
           licensePlate: "CO42DE"
+        }}
+      />
+      <DriverCard
+        name="Dara Khosrowshahi"
+        rating={4.9}
+        img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
+        car={{
+          model: "Audi A3",
+          licensePlate: "BE33ER"
         }}
       />
     </div>
